@@ -16,17 +16,16 @@
         --font-color: var(--pine);
       }
 
-      .col-5 {
+      .col:nth-child(2) {
         background: var(--pine);
         color: white;
       }
 
-      .col .content {
+      .col:nth-child(1) .content {
         width: 550px;
-        padding-right: 80px;
       }
 
-      .col-5 .content {
+      .col-5-lg .content {
         max-width: 420px;
       }
 
@@ -48,31 +47,34 @@
       }
 
       a {
-        color: var(--pine);
+        color: white;
       }
-      @media (max-width: 375px) {
+
+      .contact {
+        margin-top: 60px;
+      }
+      @media (max-width: 700px) {
         .content {
           padding: 60px;
+        }
+
+        .col-5-lg .content {
+          max-width: 550px;
         }
       }
     </style>
   </head>
   <body>
     <div class="row is-full-screen is-marginless">
-      <div class="col is-center is-marginless">
+      <div class="col col-7-lg is-center is-marginless">
         <div class="content">
           <img class="logo" src="./logo.jpg" alt="Pine Studio Logo" />
           <div class="behold">
             <div data-behold-id="dvrLNGfyeU8Y4a3ClED9"></div>
           </div>
-          <div class="contact">
-            <span class="line"><i class="icon-location-pin is-center"></i> Ahmedabad, Gujarat, INDIA</span>
-            <span class="line"><i class="icon-envelope-letter is-center"></i> <a href="mailto:">info@pinestudio.in</a></span>
-            <span class="line"><i class="icon-screen-smartphone is-center"></i> <a href="tel:">+91 99094 12345</a></span>
-          </div>
         </div>
       </div>
-      <div class="col-5 is-center is-marginless">
+      <div class="col col-5-lg is-center is-marginless">
         <div class="content">
           <h4>Why P.ine?</h4>
           <p>P.ine represents multiple things. To begin with it is an evergreen tree which translates itself as timelessness in design. Second, the intentional dot after the letter P is a <i>sūnya</i> – a symbol of creation, it represents origin and originality in ideas that we generate.</p>
@@ -80,6 +82,12 @@
           <p style="font-size: 14px; margin-top: 0">Founder & Creative Director</p>
           <p>She is an avid explorer who is fueled by an unwavering passion. She sees design as an infinite language to craft experiences that deeply resonate with clients. Armed with a postgraduate degree from the UK, her 15-year long career in design spans across large-scale developments in Hospitality, Residential, Commercial, and Retail sectors.</p>
           <p>She possesses aesthetic sensibilities refined through extensive experience in curating FF&E from India, Italy, China, and Dubai. With a keen eye for detail, she seamlessly harmonizes spatial elements, tones, and materials to weave captivating and inspiring spaces. Her collaborations with diverse design practices over the years has significantly led her to contribute towards luxurious interior projects, with a budget of up to $45M.</p>
+          <div class="contact">
+            <h4>Contact</h4>
+            <span class="line"><i class="icon-location-pin is-center"></i> Ahmedabad, Gujarat, INDIA</span>
+            <span class="line"><i class="icon-envelope-letter is-center"></i> <a href="mailto:">info@pinestudio.in</a></span>
+            <span class="line"><i class="icon-screen-smartphone is-center"></i> <a href="tel:">+91 99094 12345</a></span>
+          </div>
         </div>
       </div>
     </div>
