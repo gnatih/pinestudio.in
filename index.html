@@ -4,15 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>P.ine Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest" />
     <style>
-      /* prettier-ignore */
-      #wrapper,body,html{width:100%;height:100%;margin:0;padding:0} /* prettier-ignore */
-      #wrapper{display:flex;justify-content:center;align-items:center}
+      :root {
+        --pine: #a88e6b;
+        --font-family-sans: "Lato", sans-serif;
+        --font-color: var(--pine);
+      }
+
+      .col-5 {
+        background: var(--pine);
+        color: white;
+      }
+
+      .col .content {
+        width: 550px;
+      }
+
+      .col-5 .content {
+        max-width: 420px;
+      }
+
+      .line {
+        display: flex;
+      }
+      .line i {
+        width: 30px;
+        font-size: 14px;
+      }
+
+      .behold {
+        margin-top: 40px;
+        margin-bottom: 80px;
+      }
+
+      a {
+        color: var(--pine);
+      }
     </style>
   </head>
   <body>
-    <div id="wrapper">
-      <div data-behold-id="dvrLNGfyeU8Y4a3ClED9"></div>
+    <div class="row is-full-screen is-marginless">
+      <div class="col is-center">
+        <div class="content">
+          <img class="logo" src="./logo.jpg" alt="Pine Studio Logo" />
+          <div class="behold">
+            <div data-behold-id="dvrLNGfyeU8Y4a3ClED9"></div>
+          </div>
+          <div class="contact">
+            <span class="line"><i class="icon-location-pin is-center"></i> Ahmedabad, Gujarat, INDIA</span>
+            <span class="line"><i class="icon-envelope-letter is-center"></i> <a href="mailto:">info@pinestudio.in</a></span>
+            <span class="line"><i class="icon-screen-smartphone is-center"></i> <a href="tel:">+91 99094 12345</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-5 is-center is-marginless">
+        <div class="content">
+          <h4>Why P.ine?</h4>
+          <p>P.ine represents multiple things. To begin with it is an evergreen tree which translates itself as timelessness in design. Second, the intentional dot after the letter P is a shunya which is a symbol of creation, it represents origin and originality in ideas that we generate.</p>
+          <h4 style="margin-top: 60px; margin-bottom: 0">Palak Vasant</h4>
+          <p style="font-size: 14px; margin-top: 0">Founder & Creative Director</p>
+          <p>She is an avid explorer who is fueled by an unwavering passion. She sees design as an infinite language to craft experiences that deeply resonate with clients. Armed with a postgraduate degree from the UK, her 15-year long career in design spans across large-scale developments in Hospitality, Residential, Commercial, and Retail sectors.</p>
+          <p>She possesses aesthetic sensibilities refined through extensive experience in curating FF&E from India, Italy, China, and Dubai. With a keen eye for detail, she seamlessly harmonizes spatial elements, tones, and materials to weave captivating and inspiring spaces. Her collaborations with diverse design practices over the years has significantly led her to contribute towards luxurious interior projects, with a budget of up to $45M.</p>
+        </div>
+      </div>
     </div>
     <script>
       (() => {
