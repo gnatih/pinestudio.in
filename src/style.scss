@@ -1,0 +1,35 @@
+:root {
+  --pine: #a88e6b;
+  --font-family-sans: "Lato", sans-serif;
+  --font-color: var(--pine);
+  --grid-gutter: 30px;
+}
+
+.logo {
+  max-width: 180px;
+  margin: 80px 0;
+}
+
+.about {
+  margin: 80px 0;
+  border-top: 1px solid var(--pine);
+  padding-top: 80px;
+
+  img {
+    border-radius: 20px;
+  }
+}
+
+.contact {
+  border-top: 1px solid var(--pine);
+  margin-bottom: 80px;
+
+  .line {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+a {
+  color: var(--pine);
+}
